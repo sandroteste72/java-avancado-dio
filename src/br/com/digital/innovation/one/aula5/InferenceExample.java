@@ -13,7 +13,7 @@ import java.net.URL;
 import java.util.stream.Collectors;
 import java.util.Formatter;
 
-public class inferenciaExemplo {
+public class InferenceExample {
 
 //    private var joao = new String("joao"); // var não consegue utilizar a nível de classe, só variáveis locais, de preferencia dentro de um for ou métodos.
 
@@ -60,8 +60,6 @@ public class inferenciaExemplo {
              }
         } catch(Exception e) {
             e.printStackTrace();
-
-
         }
     }
 
@@ -113,28 +111,26 @@ public class inferenciaExemplo {
 //            for (int numero = 0; numero < numeros.length; numero++) {
             for (var numero = 0; numero < numeros.length; numero++) {
                 soma+=numeros[numero];
-
             }
-
             System.out.println("A soma é ::: "+soma);
         }
     }
 
-    // Consegue
-
-       // variáveis locais inicializadas
-       // variável suporte do enhaced for
-       // variável suporte do for interativo
-       // variável try with resouce
-
-
-    // Não consegue
-
-        // var não pode ser utilizado em nível de class
-        // var não pode ser utilizado como parametro
-        // var não pode ser utilizado em variáveis locais não inicializadas
-
-    // Link para estudos: Https://docs.oracle.com/javase/10/language/
+//     Consegue
+//
+//        variáveis locais inicializadas
+//        variável suporte do enhaced for
+//        variável suporte do for interativo
+//        variável try with resouce
+//
+//
+//     Não consegue
+//
+//         var não pode ser utilizado em nível de class
+//         var não pode ser utilizado como parametro
+//         var não pode ser utilizado em variáveis locais não inicializadas
+//
+//     Link para estudos: Https://docs.oracle.com/javase/10/language/
 
 }
 
@@ -154,12 +150,4 @@ public class inferenciaExemplo {
 //        $ /exit
 //        $ sudo docker run -it --cpus 1 openjdk:10-jdk
 //        $ Runtime.getRuntime().availableProcessors()
-//        $
-//        $
-//        $
-//        $
-//        $
-//        $
-//        $
-//        $
 

@@ -88,22 +88,22 @@ class Bedroom extends Room {
 
     private String tidyUpWardrobe() throws InterruptedException {
         Thread.sleep(5000);
-        String tidy_up_wardrobe = "tidy up wardrobe";
-        System.out.println(tidy_up_wardrobe);
-        return tidy_up_wardrobe;
+        String tidyUpWardrobe = "tidy up wardrobe";
+        System.out.println(tidyUpWardrobe);
+        return tidyUpWardrobe;
     }
 
     private String sweepRoom() throws InterruptedException {
         Thread.sleep(7000);
-        String sweep_the_room = "sweep the room";
-        System.out.println(sweep_the_room);
-        return sweep_the_room;
+        String sweepTheRoom = "sweep the room";
+        System.out.println(sweepTheRoom);
+        return sweepTheRoom;
     }
 
     private String tidyUpTheBed() throws InterruptedException {
         Thread.sleep(10000);
-        String tidy_up_the_bed = "tidy up the bed";
-        System.out.println(tidy_up_the_bed);
-        return tidy_up_the_bed;
+        String tidyUpTheBed = "tidy up the bed";
+        System.out.println(tidyUpTheBed);
+        return tidyUpTheBed;
     }
 }
