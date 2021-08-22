@@ -4,7 +4,7 @@ package br.com.digital.innovation.one.aula6;
 
 import java.awt.*;
 
-//public class StringBlankExemplo {
+//public class StringBlankExample {
 //    public static void main(String[] args) {
 //        String space = "                                                    ";
 ////        System.out.println(space != null || space.length() == 0 || space.chars().allMatch(c -> c == ' ')); // Foi criado um método dessa linha usando o atalho Crtl+Alt+M, sobre o treco que qer criar
@@ -20,7 +20,7 @@ import java.awt.*;
 //        return space != null || space.length() == 0 || space.chars().allMatch(c -> c == ' ');
 //    }
 
-//    public boolean eCompletamenteEmBranco(String space){
+//    public boolean isCompletelyBlank(String space){
 //        space.chars()
 //                .filter( c -> c != ' ')
 //    }

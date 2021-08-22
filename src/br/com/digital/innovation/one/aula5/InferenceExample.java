@@ -28,9 +28,9 @@ public class InferenceExample {
 //    }
 
     public static void main(String[] args) {
-        connectAndPrintURLJavaOracle();
+        //connectAndPrintURLJavaOracle();
         printFullName("Sandro", "Arpi");
-        printSum(15, 18);
+        printSum(15, 18, 37, 8, 7, 21, -6);
     }
 
         private static void connectAndPrintURLJavaOracle () {
@@ -58,7 +58,7 @@ public class InferenceExample {
             for (var number = 0; number < numbers.length; number++) {
                 sum += numbers[number];
             }
-            System.out.println("A soma e ::: " + sum);
+            System.out.println("A soma e :: " + sum);
         }
     }
 

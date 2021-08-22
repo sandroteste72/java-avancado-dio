@@ -22,7 +22,9 @@ public class ClientHttpExample {
     });
 
     public static void main(String[] args) throws Exception {
-        connectAkamaiHttp2Client();
+        connectAkamaiHttp11Client();
+//        connectAkamaiHttp2Client();
+//        connectAndPrintURLJavaOracle();
     }
 
     private static void connectAkamaiHttp11Client() throws Exception {
@@ -66,7 +68,7 @@ public class ClientHttpExample {
                             }
                         });
                         future.add(imgFuture);
-                        System.out.println("Submitted a future for image :: "+image);
+                        System.out.println("Submitted a future for image :: " + image);
                     });
 
             future.forEach(f -> {
@@ -101,7 +103,7 @@ public class ClientHttpExample {
             HttpResponse<String> response = httpClient.send(mainRequest, HttpResponse.BodyHandlers.ofString());
 
             System.out.println("Status Code ::: " + response.statusCode());
-            System.out.println("Response Headers ::: "+ response.headers());
+            System.out.println("Response Headers ::: " + response.headers());
             String responseBody = response.body();
             System.out.println(responseBody);
 
@@ -114,12 +116,12 @@ public class ClientHttpExample {
                     .forEach(image ->  {
                         Future<?> imgFuture  = executor.submit(() -> {
                             HttpRequest imgRequest  = HttpRequest.newBuilder()
-                                    .uri(URI.create("https://http2.akamai.com"+ image))
+                                    .uri(URI.create("https://http2.akamai.com" + image))
                                     .build();
 
                             try {
                                 HttpResponse<String> imageResponse = httpClient.send(imgRequest, HttpResponse.BodyHandlers.ofString());
-                                System.out.println("Uploaded image :: " + image+", status code :: "+imageResponse.statusCode());
+                                System.out.println("Uploaded image :: " + image + ", status code :: "+imageResponse.statusCode());
                             } catch (IOException | InterruptedException e) {
                                 System.out.println("Error message during request to retrieve image " + image);
                             }
@@ -152,8 +154,8 @@ public class ClientHttpExample {
 
         HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
 
-        System.out.println("Status code :: "+response.statusCode());
-        System.out.println("Headers response :: "+response.headers());
+        System.out.println("Status code :: " + response.statusCode());
+        System.out.println("Headers response :: " + response.headers());
         System.out.println(response.body());
     }
 }
